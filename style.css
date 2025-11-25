@@ -1,0 +1,92 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar para o Menu */
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #007bff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sidebar li a:hover,
+.sidebar li a.active {
+    background-color: #e2f0ff;
+    color: #0056b3;
+}
+
+/* Mainframe - Área de Conteúdo */
+.content {
+    flex-grow: 1; /* Ocupa o restante do espaço */
+    padding: 20px;
+}
+
+/* Loader (opcional) */
+.content.loading::before {
+    content: "Carregando...";
+    display: block;
+    text-align: center;
+    font-style: italic;
+    color: #6c757d;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #343a40;
+    color: white;
+}
+
+/* binario.css */
+/* Este estilo será aplicado apenas quando "Conversor Binário" estiver ativo */
+
+#mainframe h3 {
+    color: green;
+    border-bottom: 2px solid green;
+    padding-bottom: 5px;
+}
+
+#mainframe p {
+    font-size: 1.1em;
+    font-family: 'Courier New', monospace;
+    background-color: #e6ffe6;
+    padding: 10px;
+    border-left: 5px solid green;
+}
